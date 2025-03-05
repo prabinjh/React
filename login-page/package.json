@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "my-app",
-=======
-  "name": "my-login-app",
->>>>>>> Initial commit - Login App
+  "name": "login-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,17 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "react-scripts": "5.0.1",
-=======
-    "react-router-dom": "^7.2.0",
-    "react-scripts": "^5.0.1",
->>>>>>> Initial commit
-=======
     "react-router-dom": "^7.2.0",
     "react-scripts": "5.0.1",
->>>>>>> Initial commit - Login App
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -49,13 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.9"
->>>>>>> Initial commit - Login App
   }
 }
