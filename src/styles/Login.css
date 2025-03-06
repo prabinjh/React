@@ -1,0 +1,31 @@
+/* src/styles/Login.css */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move content to the right */
+    height: 100vh;
+    padding-right: 10%; /* Adjust spacing from the right edge */
+    background: url('/Users/prabin/Desktop/React/my-app/e-commerce-store/public/images/IMG_6391.PNG') no-repeat center center/cover;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 10px;
+}
