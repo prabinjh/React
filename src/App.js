@@ -1,36 +1,30 @@
-import React, { useState } from 'react';
+
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
+import Products from "./components/Products";
+import NotFound from "./components/NotFound";
+import CartPage from "./components/CartPage";
+import PaymentPage from "./components/PaymentPage";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState('');
-
-  const handleAddTask = () => {
-    if (newTask.trim() === '') return; // Prevent adding empty tasks
-    setTasks([...tasks, newTask]);
-    setNewTask('');
-  };
-
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>To-Do List</h1>
-      <input
-        type="text"
-        value={newTask}
-        onChange={(e) => setNewTask(e.target.value)}
-        placeholder="Add a new task"
-        style={{ padding: '10px', marginRight: '10px' }}
-      />
-      <button onClick={handleAddTask} style={{ padding: '10px', cursor: 'pointer' }}>
-        Add Task
-      </button>
-      <ul style={{ listStyle: 'none', padding: '0', marginTop: '20px' }}>
-        {tasks.map((task, index) => (
-          <li key={index} style={{ background: '#f3f3f3', padding: '10px', margin: '5px 0' }}>
-            {task}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+
   );
 }
 
