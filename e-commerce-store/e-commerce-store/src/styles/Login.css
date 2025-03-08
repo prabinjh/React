@@ -5,7 +5,7 @@
     justify-content: flex-end; /* Move content to the right */
     height: 100vh;
     padding-right: 10%; /* Adjust spacing from the right edge */
-    background: url('/Users/prabin/Desktop/React/my-app/e-commerce-store/public/images/IMG_6391.PNG') no-repeat center center/cover;
+    background: url('/Users/prabin/Desktop/React/my-app/e-commerce-store/e-commerce-store/public/images/IMG_6391.PNG') no-repeat center center/cover;
 }
 
 .login-card {
